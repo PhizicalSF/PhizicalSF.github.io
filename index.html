@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лабораторная работа №4</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form id="userForm">
+      <label for="name">ФИО:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="birthday">Дата рождения:</label><br />
+      <input type="date" id="birthday" name="birthday" /><br />
+      <label for="km_proehali">Сколько вы км проехали?:</label><br />
+      <input type="km_proehali" id="km_proehali" name="km_proehali" /><br />
+      <label for="toplivo ">И сколько топливо при этом израсходовали?</label><br />
+      <input type="toplivo" id="toplivo" name="toplivo" /><br />
+      <label for="category">Категория:</label><br />
+      <select id="category" name="category">
+        <option value="employee">Служащий</option>
+        <option value="student">Учащийся</option>
+        <option value="entrepreneur">Предприниматель</option></select
+      ><br />
+      <label for="interests">Сфера интересов:</label><br />
+      <input
+        type="checkbox"
+        id="interest1"
+        name="Математика"
+        value="Interest1"
+      />
+      <label for="interest1"> Математика</label><br />
+      <input
+        type="checkbox"
+        id="interest2"
+        name="Физика"
+        value="Interest2"
+      />
+      <label for="interest2"> Физика</label><br />
+      <input
+        type="checkbox"
+        id="interest3"
+        name="Программирование"
+        value="Interest3"
+      />
+      <label for="interest3"> Программирование</label><br />
+      <label for="photo">Фото:</label><br />
+      <input type="file" id="photo" name="photo" /><br />
+      <input type="submit" value="Отправить" />
+    </form>
+    <script src="script.js"></script>
+    <div id="output"></div>
+  </body>
+</html>
