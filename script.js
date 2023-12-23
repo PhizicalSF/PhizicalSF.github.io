@@ -45,8 +45,8 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
         'Интересы: ' + interests.join(', ') + '<br>' +
         'Фото: <img src="' + URL.createObjectURL(photo) + '" alt="Photo" /><br>'
         
-    output += 'Ваш вычисленный расход топлива на 100 км.' + rashod_raschet + '<br>'+
-    'Вам на маршрут понадобится вот столько топлива = '+marhrut_rashod +' . Это будет стоить '+money_marhrut+' . Один киллометр пробега будет стоить = '+rashod_one_km +' <br>'+
+    output += 'Ваш вычисленный расход топлива на 100 км = ' + rashod_raschet + '<br>'+
+    'Вам на маршрут понадобится вот столько топлива = '+marhrut_rashod +' . Это будет стоить '+money_marhrut+' . Один киллометр пробега будет стоить = '+rashod_one_km*cost_topliva +' <br>'+
     'При выбранных вами значения дороги и скорости, ваш тормозной путь будет = ' + S_tormoz + '<br>';
 
     document.getElementById('output').innerHTML = output;
